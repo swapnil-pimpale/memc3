@@ -71,12 +71,21 @@ static memcached_st *memc_new()
 {
   char config_string[1024];
   memcached_st *memc = NULL;
+  memcached_server_st *servers = NULL;
   unsigned long long getter;
+  memcached_return_t rc;
 
   pthread_mutex_lock (&printmutex);
   sprintf(config_string, "--SERVER=%s --BINARY-PROTOCOL", serverip);
   printf("config_string = %s\n", config_string);
-  memc = memcached(config_string, strlen(config_string));
+  //memc = memcached(config_string, strlen(config_string));
+  memc = memcached_create(NULL);
+  servers = memcached_server_list_append(servers, serverip, 11211, &rc);
+  rc = memcached_server_push(memc, servers);
+  if (rc == MEMCACHED_SUCCESS)
+	  fprintf(stderr, "Added server successfully\n");
+  else
+	  fprintf(stderr, "Couldnt add server: %s\n", serverip);
 
   getter = memcached_behavior_get(memc, MEMCACHED_BEHAVIOR_NO_BLOCK);
   printf("No block: %lld\n", getter);
@@ -84,6 +93,7 @@ static memcached_st *memc_new()
   printf("Socket send size: %lld\n", getter);
   getter = memcached_behavior_get(memc, MEMCACHED_BEHAVIOR_SOCKET_RECV_SIZE);
   printf("Socket recv size: %lld\n", getter);
+  memcached_behavior_set(memc, MEMCACHED_BEHAVIOR_BINARY_PROTOCOL, 1);
 
   pthread_mutex_unlock (&printmutex);
   return memc;
