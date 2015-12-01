@@ -1,0 +1,81 @@
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.BasicDB -P /Users/udbhav/Code/ycsb-0.5.0/workloads/workloadc -P ./ycsb_small_workload_settings/kv_small_workload_zipf -load
+***************** properties *****************
+"insertproportion"="0"
+"fieldcount"="1"
+"fieldlength"="32"
+"readproportion"="1"
+"scanproportion"="0"
+"readallfields"="true"
+"requestdistribution"="zipfian"
+"workload"="com.yahoo.ycsb.workloads.CoreWorkload"
+"recordcount"="50"
+"updateproportion"="0"
+"operationcount"="50"
+"db"="com.yahoo.ycsb.BasicDB"
+**********************************************
+INSERT usertable user6284781860667377211 [ field0=/8.-_-0_/!:d*;d?=b</t:3 7Nq6 j<L ]
+INSERT usertable user8517097267634966620 [ field0=6^a'^=+*,-E7/8x&N=84n+Om>?~+O7=G ]
+INSERT usertable user1820151046732198393 [ field0=)_}6M1?Va3Lu*Z#1$87Uc/$<61|*Oc/1 ]
+INSERT usertable user4052466453699787802 [ field0= Co6J-"Qc'K=0:2)@+!"z# 6>S'=Pi"< ]
+INSERT usertable user3232700585171816769 [ field0=%N%,G;:Gq;J/4Ja7V{5(t7$x<Ci2?&<[ ]
+INSERT usertable user1000385178204227360 [ field0=+_y/Pu:<l#Fe1)4 % =C}*)b>+69Qu6^ ]
+INSERT usertable user7697331399106995587 [ field0=&E#);d6A}'Xs<1 )_e5F3)K;,,6 C{?= ]
+INSERT usertable user5465015992139406178 [ field0=7@o>O=7d'Nk0Y)%Vu:(f2=`93x?'4&? ]
+INSERT usertable user6873002678636213555 [ field0=&Bg>;::/r*<h&Hu'L%5> 0^k0K=-P;4_ ]
+INSERT usertable user9105318085603802964 [ field0=-8 =*(;+*<)0!U51Go"Xq.4"!R90+>5& ]
+INSERT usertable user2408371864701034737 [ field0=3B+=N/6#r+Y+.8b#K)910,88)W9)E-7A ]
+INSERT usertable user4640687271668624146 [ field0=?H-(A;2W?5_k1+`6+(""r+P/4+f/@q%W ]
+INSERT usertable user2644479767202980425 [ field0=8]'<Gk1*x;Nm7Gq;Uo#1,<Q?,7,,1(%0 ]
+INSERT usertable user412164360235391016 [ field0==G#Eg"T&=n>Z)<):+4$-;6;\{"@'5O ]
+INSERT usertable user7109110581138159243 [ field0=)>n&@7& z6N/0_?%H'2'b776)Bw7=((" ]
+INSERT usertable user4876795174170569834 [ field0=7P-!:`*$*!#&* h66":Ew?#"<Oi#]=#. ]
+INSERT usertable user7461223496605049899 [ field0=2I95*h64. V)40$!*:=34)<`*'$1$0.) ]
+INSERT usertable user8753205170136912308 [ field0=4Wu*P5;X)(2$(;:<G93Hu+K<+6!Qm"3 ]
+INSERT usertable user2996592682669871081 [ field0=0?, G=(J=1_g3.b;\w7Ve*L+++>8]7#B ]
+INSERT usertable user5228908089637460490 [ field0=.M-(Y?(H-83x9#|?L;'Yk>])0Y71\!2E ]
+INSERT usertable user2056258949234144081 [ field0=(Fc"&455r?4:']+<Rm,K%5Me8'28:p$Z ]
+INSERT usertable user176056457733445328 [ field0=9Vm+T;9Hw>*8:Rs/:p ]=$76)Kg:@g<] ]
+INSERT usertable user6520889763169322899 [ field0=,/v'O!8:p>"r8Sy.H;#Ei./8<5"8^{;T ]
+INSERT usertable user4288574356201733490 [ field0=7[s7<|00*0,t P%0T!(+`+=l;Zo:'x89 ]
+INSERT usertable user8049444314573886243 [ field0=7N=,&,,"r?Ti'4x:F9$Z:4( Z=!Gg24 ]
+INSERT usertable user8164984352168075964 [ field0=&&x?0$>+p6"h(:*,Xo)7(=Gm9]78?<,% ]
+INSERT usertable user3584813500638707425 [ field0='4l?*(*8 !"26]= 9~2*>,Ue'\i*E1:$ ]
+INSERT usertable user5817128907606296834 [ field0=-(:%G+74x>[q=0.5L99:*)8n1V/(:,"? ]
+INSERT usertable user1468038131265307737 [ field0=4D{'Qa#"6!&.!\9 T)>@3)-:5F%$]m3! ]
+INSERT usertable user764277275702281672 [ field0=;U7%4j+\k2^5<&l.^{'Zq+E32X5 N/+% ]
+INSERT usertable user5932668945200486555 [ field0= G',Oi$Qi#9z,@{"I-;M=4Em<:2)Ke + ]
+INSERT usertable user3700353538232897146 [ field0=);6)L',845;l):f'Ww''r;^s(X-<),)9 ]
+INSERT usertable user3931898588792031835 [ field0=1Fk;Y-+U!(6((($=%(80f#Eu!:v"(8-U ]
+INSERT usertable user6164213995759621244 [ field0="5d/Xs(Hs.^c--f22f:>p'[!$1`'Ie0H ]
+INSERT usertable user532732225143146983 [ field0=3"p:Bo9Fm76 (C#5Mw/C?Wy>U--^5#Y ]
+INSERT usertable user1699583181824442426 [ field0=!D?1>$%&r'2f3Oe&*v6J}.+"8/z'W1"M ]
+INSERT usertable user5585583857047162145 [ field0=0P!=(&:^y7/v9 "=Ka-N%!/>,J')Tu/F ]
+INSERT usertable user3353268450079572736 [ field0=$Tk>=>6>h?La G58->>'v+;"&]y:Bm8: ]
+INSERT usertable user8396529402727210653 [ field0=)-n*(:',$%Gq79~?%<3.d*&828p#G#"5 ]
+INSERT usertable user7817899264014751554 [ field0="I)%P},%$4!6==h6D0^7,Iw5-b'^!+K ]
+INSERT usertable user4520119406760868179 [ field0=,Fk3>*%N?9 z3C'$"20Hi24$0(x?.>-& ]
+INSERT usertable user6752434813728457588 [ field0=*X3!Na3%4<46#8.!9$./t/(f/Dw;;r;% ]
+INSERT usertable user55488592825689361 [ field0=!<,=7n2U9)Aa.%<$Fi:#t:=f%N%09$+' ]
+INSERT usertable user2287803999793278770 [ field0=0Xc6(&,),)1f6G#1?n/I19/n+B7)I!2V ]
+INSERT usertable user4997363039078325801 [ field0=$H!)Qk>L/%U-5_s'F3.?2)#b;Yq+R;:< ]
+INSERT usertable user2765047632110736392 [ field0=8A-!]7.:d;#`'9j&1:7-d.I56Dc+C#-W ]
+INSERT usertable user8984750220696046997 [ field0=?O54*>!:n&-p8"0!-j&Nc'Xu=U7<@c/Z ]
+INSERT usertable user7229678446045915210 [ field0==Zi&^y7:h.\}8"r3E{,8&5M1:^50*~(" ]
+INSERT usertable user5108340224729704523 [ field0=)0<%Zq0-4=A58*b#N)$_q'Ek%=b+Ie&D ]
+INSERT usertable user7340655631697293932 [ field0=&Cu3%4,<r/0v>A+1<6![;02.-'0(9x21 ]
+[OVERALL], RunTime(ms), 20.0
+[OVERALL], Throughput(ops/sec), 2500.0
+[CLEANUP], Operations, 1.0
+[CLEANUP], AverageLatency(us), 1.0
+[CLEANUP], MinLatency(us), 1.0
+[CLEANUP], MaxLatency(us), 1.0
+[CLEANUP], 95thPercentileLatency(us), 1.0
+[CLEANUP], 99thPercentileLatency(us), 1.0
+[INSERT], Operations, 50.0
+[INSERT], AverageLatency(us), 135.2
+[INSERT], MinLatency(us), 69.0
+[INSERT], MaxLatency(us), 1118.0
+[INSERT], 95thPercentileLatency(us), 182.0
+[INSERT], 99thPercentileLatency(us), 1118.0
+[INSERT], Return=OK, 50

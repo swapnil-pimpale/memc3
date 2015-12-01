@@ -1,0 +1,81 @@
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.BasicDB -P /Users/udbhav/Code/ycsb-0.5.0/workloads/workloadc -P ./ycsb_small_workload_settings/kv_small_workload_zipf -t
+***************** properties *****************
+"insertproportion"="0"
+"fieldcount"="1"
+"fieldlength"="32"
+"readproportion"="1"
+"scanproportion"="0"
+"readallfields"="true"
+"requestdistribution"="zipfian"
+"workload"="com.yahoo.ycsb.workloads.CoreWorkload"
+"recordcount"="50"
+"updateproportion"="0"
+"operationcount"="50"
+"db"="com.yahoo.ycsb.BasicDB"
+**********************************************
+READ usertable user4640687271668624146 [ <all fields>]
+READ usertable user1699583181824442426 [ <all fields>]
+READ usertable user2765047632110736392 [ <all fields>]
+READ usertable user176056457733445328 [ <all fields>]
+READ usertable user6873002678636213555 [ <all fields>]
+READ usertable user2287803999793278770 [ <all fields>]
+READ usertable user3353268450079572736 [ <all fields>]
+READ usertable user4640687271668624146 [ <all fields>]
+READ usertable user532732225143146983 [ <all fields>]
+READ usertable user3353268450079572736 [ <all fields>]
+READ usertable user2056258949234144081 [ <all fields>]
+READ usertable user4052466453699787802 [ <all fields>]
+READ usertable user8164984352168075964 [ <all fields>]
+READ usertable user7229678446045915210 [ <all fields>]
+READ usertable user4876795174170569834 [ <all fields>]
+READ usertable user2765047632110736392 [ <all fields>]
+READ usertable user764277275702281672 [ <all fields>]
+READ usertable user6520889763169322899 [ <all fields>]
+READ usertable user6164213995759621244 [ <all fields>]
+READ usertable user3584813500638707425 [ <all fields>]
+READ usertable user764277275702281672 [ <all fields>]
+READ usertable user55488592825689361 [ <all fields>]
+READ usertable user4520119406760868179 [ <all fields>]
+READ usertable user5817128907606296834 [ <all fields>]
+READ usertable user2056258949234144081 [ <all fields>]
+READ usertable user8753205170136912308 [ <all fields>]
+READ usertable user8164984352168075964 [ <all fields>]
+READ usertable user3232700585171816769 [ <all fields>]
+READ usertable user2644479767202980425 [ <all fields>]
+READ usertable user3700353538232897146 [ <all fields>]
+READ usertable user1000385178204227360 [ <all fields>]
+READ usertable user5932668945200486555 [ <all fields>]
+READ usertable user4997363039078325801 [ <all fields>]
+READ usertable user1468038131265307737 [ <all fields>]
+READ usertable user2996592682669871081 [ <all fields>]
+READ usertable user8396529402727210653 [ <all fields>]
+READ usertable user4640687271668624146 [ <all fields>]
+READ usertable user3931898588792031835 [ <all fields>]
+READ usertable user1820151046732198393 [ <all fields>]
+READ usertable user176056457733445328 [ <all fields>]
+READ usertable user6873002678636213555 [ <all fields>]
+READ usertable user2056258949234144081 [ <all fields>]
+READ usertable user8984750220696046997 [ <all fields>]
+READ usertable user4640687271668624146 [ <all fields>]
+READ usertable user4052466453699787802 [ <all fields>]
+READ usertable user6520889763169322899 [ <all fields>]
+READ usertable user8164984352168075964 [ <all fields>]
+READ usertable user3931898588792031835 [ <all fields>]
+READ usertable user3353268450079572736 [ <all fields>]
+READ usertable user2056258949234144081 [ <all fields>]
+[OVERALL], RunTime(ms), 16.0
+[OVERALL], Throughput(ops/sec), 3125.0
+[READ], Operations, 50.0
+[READ], AverageLatency(us), 58.86
+[READ], MinLatency(us), 35.0
+[READ], MaxLatency(us), 457.0
+[READ], 95thPercentileLatency(us), 93.0
+[READ], 99thPercentileLatency(us), 457.0
+[READ], Return=OK, 50
+[CLEANUP], Operations, 1.0
+[CLEANUP], AverageLatency(us), 2.0
+[CLEANUP], MinLatency(us), 2.0
+[CLEANUP], MaxLatency(us), 2.0
+[CLEANUP], 95thPercentileLatency(us), 2.0
+[CLEANUP], 99thPercentileLatency(us), 2.0
