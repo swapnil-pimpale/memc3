@@ -227,7 +227,8 @@ static void create_worker(void *(*func)(void *), void *arg, int i) {
 #ifdef __linux__
     cpu_set_t cpuset;
     int coreid;
-    coreid = 6 + i;
+    //coreid = 6 + i;
+    coreid = i;
     CPU_ZERO(&cpuset);
     CPU_SET(coreid, &cpuset);
     pthread_attr_init(&attr);
@@ -239,6 +240,8 @@ static void create_worker(void *(*func)(void *), void *arg, int i) {
                 strerror(ret));
         exit(1);
     }
+
+    printf("Created thread with id %lu\n", thread);
 }
 
 /*
@@ -529,6 +532,7 @@ enum store_item_type do_store_item(item *it, const uint32_t hv) {
     enum store_item_type stored;
     char *key = ITEM_key(it);
     item *old_it = do_item_get(key, it->nkey, hv);
+    //fprintf(stderr, "STORING: worker thread (%ld) on core %d\n", syscall(SYS_gettid),  sched_getcpu());
     if (old_it != NULL) {
         assert(old_it != it);
 
@@ -550,6 +554,7 @@ enum store_item_type do_store_item(item *it, const uint32_t hv) {
     } else {
         stored = STORED;
     }
+    //fprintf(stderr, "DONE STORING: worker thread (%ld) on core %d\n", syscall(SYS_gettid),  sched_getcpu());
 
     return  stored;
 }

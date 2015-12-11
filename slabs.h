@@ -46,6 +46,7 @@ enum reassign_result_type slabs_reassign(int src, int dst);
 #ifdef MEMC3_CACHE_CLOCK
 item* slabs_cache_evict(unsigned int id);
 void slabs_cache_update(item* it);
+void print_slab_clock(unsigned int id);
 #endif
 
 #endif

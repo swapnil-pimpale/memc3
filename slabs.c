@@ -192,13 +192,19 @@ static int grow_slab_list (const unsigned int id) {
     if (p->slabs == p->list_size) {
         size_t new_size =  (p->list_size != 0) ? p->list_size * 2 : 16;
         void *new_list = realloc(p->slab_list, new_size * sizeof(void *));
-        if (new_list == 0) return 0;
+        if (new_list == 0) {
+		printf("%s:%d: returning 0\n", __func__, __LINE__);
+		return 0;
+	}
 #ifdef MEMC3_CACHE_CLOCK
         // added by Bin:
         //size_t old_bitmap_len = p->bitmap_len;
         size_t new_bitmap_len = (new_size * p->perslab + 7) / 8;
         void *new_bitmap = realloc(p->bitmap, new_bitmap_len);
-        if (new_bitmap == 0) return 0;
+        if (new_bitmap == 0) {
+		printf("%s:%d: returning 0\n", __func__, __LINE__);
+		return 0;
+	}
         
         //memset((char*) new_bitmap + old_bitmap_len, 0, new_bitmap_len - old_bitmap_len);
         p->bitmap_len = new_bitmap_len;
@@ -220,6 +226,7 @@ static int do_slabs_newslab(const unsigned int id) {
         (grow_slab_list(id) == 0) ||
         ((ptr = memory_allocate((size_t)len)) == 0)) {
 
+	    printf("%s:%d !!!!!!!!!!!\n", __func__, __LINE__);
         MEMCACHED_SLABS_SLABCLASS_ALLOCATE_FAILED(id);
         return 0;
     }
@@ -640,4 +647,22 @@ void slabs_cache_update(item* it) {
         bv_setbit(p->bitmap, pos, 1);
     }
 }
+
+void print_slab_clock(unsigned int id)
+{
+	int i;
+	slabclass_t *p;
+
+	p = &slabclass[id];
+	printf("p->clock_max = %u\n", p->clock_max);
+	for (i = 0; i < p->clock_max; i++) {
+		if (bv_getbit(p->bitmap, i) == 0)
+			printf("0");
+		else
+			printf("1");
+	}
+
+	printf("\n");
+}
+
 #endif
